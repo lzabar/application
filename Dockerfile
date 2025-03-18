@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 COPY src ./src
 COPY app ./app
 COPY train.py .
-COPY run.sh
+COPY run.sh .
 
 CMD ["python3", "train.py"]
 CMD ["./app/run.sh"]
